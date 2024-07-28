@@ -43,9 +43,9 @@ export default function App(){
   return(
     <>
   {/* <Router> */}
-  <Navbar textutil='Textutils' mode ={mode} toggle ={toggleMode}/>
-  <Alert alert={alert} />
-  <Text />
+  <Navbar textutil='Textutils' mode ={mode} toggle ={toggleMode} />
+  <Alert alert={alert}  />
+  <Text showalert={Showalert} />
       {/* <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Text />} />
