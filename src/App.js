@@ -2,14 +2,14 @@ import Navbar from "./Component/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Text from "./Component/text";
-import About from "./Component/about";
+// import About from "./Component/about";
 import React,{useState} from "react";
 import Alert from "./Component/Alert";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
 
 
 
@@ -42,14 +42,15 @@ export default function App(){
 
   return(
     <>
-  <Router>
+  {/* <Router> */}
   <Navbar textutil='Textutils' mode ={mode} toggle ={toggleMode}/>
   <Alert alert={alert} />
-      <Routes>
+  <Text />
+      {/* <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Text />} />
       </Routes>
-    </Router>
+    </Router> */}
   </>
   )
 }
